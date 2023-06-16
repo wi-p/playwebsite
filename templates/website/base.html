@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %} "/>
+        <title>{% block pagetitle %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="{% static 'website/images/logo.png' %}" id="logo"/> <h1 id="title">PlayStation</h1>
+            <nav>
+            	<a href="">Nitendo</a>
+            	<a href="">PS1</a>
+            	<a href="">PS2</a>
+            	<a href="">PS3</a>
+            	<a href="">PS4</a>
+            	<a href="">PS5</a>
+            	<a href="">Xbox</a>
+            </nav>
+        </header>
+
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <footer>
+			<h3>Play Station</h3>
+        </footer>
+
+    </body>
+</html>

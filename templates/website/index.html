@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block pagetitle %}Index{% endblock %}
+
+{% block content %}
+	<div>
+		<h2>News about games</h2>
+		{% for new in gamenews %}
+			<div class="post">
+				<div class='divpost_image'>
+					<img src="{{ MEDIA_URL }}{{ new.photo }}" class="postimage">
+				</div>
+				
+				<div class='divpost_title'>
+					<a href="{% url 'post' new.url %}"><h3 class="title">{{ new.title }}</h3></a>
+					<p class='postcontent'>{{ new.content|truncatewords:100 }}</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	
+	<div>
+		<h2>Games</h2>
+        {% for game in videogames %}
+            <div class="post">
+                <a href=""><h3 class="title">{{ game.name }}</h3></a>
+            </div>
+        {% endfor %}
+	</div>
+
+	<div>
+		<h2>Game's reviews</h2>
+	</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block pagetitle %} {{ new.title }} {% endblock %}
+
+{% block content %}
+	<h2 class='title titlepost'>{{ new.title }}</h2>
+	
+	<figure>
+		<img src="{{ MEDIA_URL }}{{ new.photo }}" id="postphoto">
+	</figure>
+	
+	<p id="postcontent">{{ new.content }}</p>
+
+{% endblock %}

@@ -1,0 +1,102 @@
+body{
+    background-color:#050300;
+    color:#f2f2f2;
+}
+
+/* header */
+header{
+	border-bottom:0.1em solid #ffcb00;
+}
+
+header nav{
+	margin:1em 3em 1em 15em;
+	font-weight:bold;
+}
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	font-size:15pt;
+	margin-right:5em;
+}
+
+#title{
+	display:inline;
+    float:center;
+    font-size:25pt;
+    padding-bottom:1em;
+}
+
+#logo{
+    display:inline;
+    width:7em;
+    height:7em;
+    vertical-align:middle;
+}
+
+/* content */
+
+#content{
+	padding:0 10em 0 10em;
+	margin-bottom:50em;
+}
+
+.post{
+    border: 0.2em solid #c1c1e2;
+    border-radius:0.9em;
+    height:15em;
+    margin-bottom:1em;
+    padding:2em 2em 0 2em;
+}
+
+.postimage{
+	width:11em;
+	height:14em;
+}
+
+.divpost_image{
+	display:inline-block;
+	width:11em;
+	margin-right:3em;
+}
+
+.divpost_title{
+	display:inline-block;
+	width:42em;
+}
+
+.postcontent{
+	display:inline;
+	text-align:justify;
+}
+
+#postcontent{
+	text-align:justify;
+}
+
+#postphoto{
+	width:13em;
+	height:20em;
+	display:block;
+	margin-left:40%;
+	margin-right:40%;
+}
+
+.title{
+	color:#f2f2f2;
+	vertical-align:top;
+}
+
+.titlepost{
+	margin-top:3em;
+}
+
+/* footer */
+
+footer{
+	text-align:center;
+}
+
+a:link{
+	text-decoration:none;
+	color:#f2f2f2;
+}
